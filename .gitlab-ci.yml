@@ -8,7 +8,7 @@ deploy_job:
   stage: deploy_stage
 
   before_script:
-    - 'which ssh-agent || (apk update && apk add curl git openssh-client)'
+    - 'which ssh-agent || (apk update && apk add git openssh-client)'
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
     - mkdir -p ~/.ssh
