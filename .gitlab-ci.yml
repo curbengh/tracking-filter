@@ -8,7 +8,7 @@ deploy_job:
   stage: deploy_stage
 
   before_script:
-    - 'which ssh-agent || (apk update && apk add openssh-client git)'
+    - 'which ssh-agent || (apk update && apk add curl git openssh-client)'
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
     - mkdir -p ~/.ssh
@@ -17,7 +17,7 @@ deploy_job:
     - chmod 644 ~/.ssh/known_hosts
 
   script:
-    - sh script.sh
+    - sh src/script.sh
 
     - git checkout master
     - git config --global user.name "curben-bot"
