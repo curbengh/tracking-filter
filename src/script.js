@@ -9,8 +9,8 @@ const f = async () => {
   const outputFile = join(__dirname, '../dist/tracking-data.txt')
   await writeFile(outputFile, `# Title: Tracking URL
 # Updated: ${new Date().toUTCString()}
-# Repo: https://gitlab.com/curben/tracking-data
-# License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+# Repo: https://gitlab.com/curben/tracking-filter
+# License: https://gitlab.com/curben/tracking-filter#license
 # Source: https://github.com/duckduckgo/tracker-radar\n`)
   const domains = join(__dirname, '../tmp/tracker-radar/domains')
   const countries = await readdir(domains)
