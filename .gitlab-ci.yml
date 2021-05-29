@@ -34,7 +34,7 @@ deploy_job:
     - git diff-index --quiet HEAD || git commit -m "Success pipeline"
 
     - ssh -T git@gitlab.com
-    - git remote set-url origin git@gitlab.com:curben/tracking-data.git
+    - git remote set-url origin git@gitlab.com:curben/tracking-filter.git
     - git push origin master
 
   rules:
@@ -67,7 +67,7 @@ failed_job:
     - git add .gitlab/status.svg
     - git diff-index --quiet HEAD || git commit -m "Failed pipeline"
     - ssh -T git@gitlab.com
-    - git remote set-url origin git@gitlab.com:curben/tracking-data.git
+    - git remote set-url origin git@gitlab.com:curben/tracking-filter.git
     - git push origin master
 
   rules:
