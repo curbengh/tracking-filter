@@ -7,20 +7,15 @@ cd "tmp/"
 
 
 # Prepare datasets
-# rm -rf "tracker-radar/"
-# git clone --depth 1 "https://github.com/duckduckgo/tracker-radar" "tracker-radar/"
+rm -rf "tracker-radar/"
+git clone --depth 1 "https://github.com/duckduckgo/tracker-radar" "tracker-radar/"
 
+# Extract tracking links
+node "../src/script.js"
 
-# # Extract tracking links
-# node "../src/script.js"
-
-
-# # Cleanup
-# cat "../dist/tracking-data.txt" | \
-# # Remove comment
-# sed "/^#/d" | \
-# # Remove www.
-# sed "s/^www\.//g" > "tracking-url.txt"
+# Cleanup
+cat "tracking-data-raw.txt" | \
+sort -u > "tracking-url.txt"
 
 
 CURRENT_TIME="$(date -R -u)"
@@ -32,13 +27,16 @@ FIFTH_LINE="! License: https://gitlab.com/curben/tracking-filter#license"
 SIXTH_LINE="! Source: https://github.com/duckduckgo/tracker-radar"
 COMMENT_UBO="$FIRST_LINE\n$SECOND_LINE\n$THIRD_LINE\n$FOURTH_LINE\n$FIFTH_LINE\n$SIXTH_LINE"
 
+# Original data
+cat "tracking-url.txt" | \
+sed '1 i\'"$COMMENT_UBO"'' | \
+sed "s/^!/#/g" > "../dist/tracking-data.txt"
 
 # uBO & Adguard
 cat "tracking-url.txt" | \
 sed "s/^/||/g" | \
 sed "s/$/\$all/g" | \
 sed '1 i\'"$COMMENT_UBO"'' > "../dist/tracking-filter.txt"
-
 
 # Vivaldi
 cat "tracking-url.txt" | \
