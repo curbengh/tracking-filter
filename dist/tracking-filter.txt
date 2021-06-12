@@ -1,5 +1,5 @@
 ! Title: Tracking URL Blocklist
-! Updated: Sat, 05 Jun 2021 00:28:38 UTC
+! Updated: Sat, 12 Jun 2021 00:25:54 UTC
 ! Expires: 7 day (update frequency)
 ! Homepage: https://gitlab.com/curben/tracking-filter
 ! License: https://gitlab.com/curben/tracking-filter#license
