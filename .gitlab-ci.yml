@@ -1,11 +1,11 @@
 stages:
-  - deploy_stage
+  - test
   - failed_stage
 
 image: node:lts-alpine # Use latest LTS version of Node.js on Alpine
 
 deploy_job:
-  stage: deploy_stage
+  stage: test
 
   before_script:
     - 'which ssh-agent || (apk update && apk add git openssh-client)'
@@ -82,3 +82,6 @@ failed_job:
       when: on_failure
     - if: '$CI_COMMIT_REF_NAME == "master" && $CI_PIPELINE_SOURCE == "web"'
       when: on_failure
+
+include:
+  - template: Security/Secret-Detection.gitlab-ci.yml
