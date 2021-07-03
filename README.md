@@ -1,4 +1,4 @@
-# Tracking URL Blocklist
+# Tracking JS Blocklist
 
 A blocklist of javascript links (or webpages with javascript) that perform [browser fingerprinting](https://en.wikipedia.org/wiki/Web_tracking). The original data set is collected by DuckDuckGo's [Tracker Radar](https://github.com/duckduckgo/tracker-radar) project. Blocklist is updated on the first day of the month.
 

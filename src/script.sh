@@ -19,7 +19,7 @@ sort -u > "tracking-url.txt"
 
 
 CURRENT_TIME="$(date -R -u)"
-FIRST_LINE="! Title: Tracking URL Blocklist"
+FIRST_LINE="! Title: Tracking JS Blocklist"
 SECOND_LINE="! Updated: $CURRENT_TIME"
 THIRD_LINE="! Expires: 7 day (update frequency)"
 FOURTH_LINE="! Homepage: https://gitlab.com/curben/tracking-filter"
