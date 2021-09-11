@@ -1,5 +1,5 @@
 ! Title: Tracking JS Blocklist (Vivaldi)
-! Updated: Sat, 04 Sep 2021 00:18:42 UTC
+! Updated: Sat, 11 Sep 2021 00:34:57 UTC
 ! Expires: 7 day (update frequency)
 ! Homepage: https://gitlab.com/curben/tracking-filter
 ! License: https://gitlab.com/curben/tracking-filter#license
