@@ -72,7 +72,7 @@ A list of URLs without any filter syntax.
 
 ## See also
 
-- [Blokada version](https://blokada.org/blocklists/ddgtrackerradar/standard/hosts.txt) can block more tracking links but with more false positives. [More details](https://community.blokada.org/t/introducing-duckduckgo-tracker-radar-to-blokada/469)
+- [Blokada version](https://blokada.org/blocklists/ddgtrackerradar/standard/hosts.txt) can block more tracking domains but with more false positives. [More details](https://community.blokada.org/t/introducing-duckduckgo-tracker-radar-to-blokada/469)
 
 ## License
 
