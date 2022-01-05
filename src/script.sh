@@ -15,6 +15,8 @@ node "../src/script.js"
 
 # Cleanup
 cat "tracking-data-raw.txt" | \
+# exclude false positives
+grep -F -vf "../src/exclude.txt" | \
 sort -u > "tracking-url.txt"
 
 
