@@ -1,5 +1,7 @@
 # Tracking JS Blocklist
 
+> Edit 2021/01/08: the default branch has changed to **main**.
+
 A blocklist of javascript links (or webpages with javascript) that perform [browser fingerprinting](https://en.wikipedia.org/wiki/Web_tracking). The original data set is collected by DuckDuckGo's [Tracker Radar](https://github.com/duckduckgo/tracker-radar) project. Blocklist is updated on the first day of the month.
 
 The list contains **all** the links that Tracker Radar detected to have browser fingerprinting, there is no further processing to remove false positive.
@@ -23,12 +25,7 @@ Import the following URL into uBO/AdGuard to subscribe:
 <details>
 <summary>Mirrors</summary>
 
-- https://cdn.statically.io/gl/curben/phishing-filter/master/dist/tracking-filter.txt
-- https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/tracking-filter.txt
-- https://raw.githubusercontent.com/curbengh/phishing-filter/master/dist/tracking-filter.txt
-- https://cdn.statically.io/gh/curbengh/phishing-filter/master/dist/tracking-filter.txt
-- https://gitcdn.xyz/repo/curbengh/phishing-filter/master/dist/tracking-filter.txt
-- https://cdn.jsdelivr.net/gh/curbengh/phishing-filter/dist/tracking-filter.txt
+- https://curben.gitlab.io/tracking-filter/tracking-filter.txt
 
 </details>
 
@@ -43,12 +40,7 @@ Import the following URL into Vivaldi's **Tracker Blocking Sources** to subscrib
 <details>
 <summary>Mirrors</summary>
 
-- https://cdn.statically.io/gl/curben/tracking-filter/master/dist/tracking-filter-vivaldi.txt
-- https://glcdn.githack.com/curben/tracking-filter/raw/master/dist/tracking-filter-vivaldi.txt
-- https://raw.githubusercontent.com/curbengh/tracking-filter/master/dist/tracking-filter-vivaldi.txt
-- https://cdn.statically.io/gh/curbengh/tracking-filter/master/dist/tracking-filter-vivaldi.txt
-- https://gitcdn.xyz/repo/curbengh/tracking-filter/master/dist/tracking-filter-vivaldi.txt
-- https://cdn.jsdelivr.net/gh/curbengh/tracking-filter/dist/tracking-filter-vivaldi.txt
+- https://curben.gitlab.io/tracking-filter/tracking-filter-vivaldi.txt
 
 </details>
 
@@ -61,12 +53,7 @@ A list of URLs without any filter syntax.
 <details>
 <summary>Mirrors</summary>
 
-- https://cdn.statically.io/gl/curben/tracking-filter/master/dist/tracking-data.txt
-- https://glcdn.githack.com/curben/tracking-filter/raw/master/dist/tracking-data.txt
-- https://raw.githubusercontent.com/curbengh/tracking-filter/master/dist/tracking-data.txt
-- https://cdn.statically.io/gh/curbengh/tracking-filter/master/dist/tracking-data.txt
-- https://gitcdn.xyz/repo/curbengh/tracking-filter/master/dist/tracking-data.txt
-- https://cdn.jsdelivr.net/gh/curbengh/tracking-filter/dist/tracking-data.txt
+- https://curben.gitlab.io/tracking-filter/tracking-data.txt
 
 </details>
 
@@ -78,9 +65,7 @@ A list of URLs without any filter syntax.
 
 [src/](src/): [CC0 1.0](LICENSE.md)
 
-[badge.sh](src/badge.sh) & [.gitlab/](.gitlab/) contain badges that are licensed by [Shields.io](https://shields.io) under [CC0 1.0](LICENSE.md)
-
-[dist/](dist/): [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+filters: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 DuckDuckGo Tracker Radar data: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 

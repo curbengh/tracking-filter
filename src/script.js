@@ -1,7 +1,7 @@
 'use strict'
 
 const { join } = require('path')
-const { appendFile, readdir, readFile, rm } = require('fs').promises
+const { appendFile, readdir, readFile, rm } = require('fs/promises')
 const { parse } = JSON
 
 const f = async () => {

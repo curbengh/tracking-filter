@@ -27,25 +27,29 @@ THIRD_LINE="! Expires: 7 day (update frequency)"
 FOURTH_LINE="! Homepage: https://gitlab.com/curben/tracking-filter"
 FIFTH_LINE="! License: https://gitlab.com/curben/tracking-filter#license"
 SIXTH_LINE="! Source: https://github.com/duckduckgo/tracker-radar"
-COMMENT_UBO="$FIRST_LINE\n$SECOND_LINE\n$THIRD_LINE\n$FOURTH_LINE\n$FIFTH_LINE\n$SIXTH_LINE"
+ANNOUNCEMENT_1="\n! 2021/01/08: There has been a major change to the mirrors, check the repo for the new mirrors."
+ANNOUNCEMENT_2="! Old mirrors will be deprecated in 3 months. The main download link \"curben.gitlab.io/malware-filter/\" _is not affected_."
+COMMENT_UBO="$FIRST_LINE\n$SECOND_LINE\n$THIRD_LINE\n$FOURTH_LINE\n$FIFTH_LINE\n$SIXTH_LINE\n$ANNOUNCEMENT_1\n$ANNOUNCEMENT_2"
+
+mkdir -p "../public/"
 
 # Original data
 cat "tracking-url.txt" | \
 sed '1 i\'"$COMMENT_UBO"'' | \
-sed "s/^!/#/g" > "../dist/tracking-data.txt"
+sed "s/^!/#/g" > "../public/tracking-data.txt"
 
 # uBO & Adguard
 cat "tracking-url.txt" | \
 sed "s/^/||/g" | \
 sed "s/$/\$all/g" | \
-sed '1 i\'"$COMMENT_UBO"'' > "../dist/tracking-filter.txt"
+sed '1 i\'"$COMMENT_UBO"'' > "../public/tracking-filter.txt"
 
 # Vivaldi
 cat "tracking-url.txt" | \
 sed "s/^/||/g" | \
 sed "s/$/\$document/g" | \
 sed '1 i\'"$COMMENT_UBO"'' | \
-sed "1s/Blocklist/Blocklist (Vivaldi)/" > "../dist/tracking-filter-vivaldi.txt"
+sed "1s/Blocklist/Blocklist (Vivaldi)/" > "../public/tracking-filter-vivaldi.txt"
 
 ## This took more than 10 minutes on my not-so-sham laptop which is equivalent of *forever* on puny CI/CD VM.
 # # Snort & Suricata
@@ -54,9 +58,9 @@ sed "1s/Blocklist/Blocklist (Vivaldi)/" > "../dist/tracking-filter-vivaldi.txt"
 # ## Temporarily disable command print
 # set +x
 
-# rm -f "../dist/tracking-filter-snort2.rules" \
-#   "../dist/tracking-filter-snort3.rules" \
-#   "../dist/tracking-filter-suricata.rules"
+# rm -f "../public/tracking-filter-snort2.rules" \
+#   "../public/tracking-filter-snort3.rules" \
+#   "../public/tracking-filter-suricata.rules"
 
 # SID="400000001"
 
@@ -71,9 +75,9 @@ sed "1s/Blocklist/Blocklist (Vivaldi)/" > "../dist/tracking-filter-vivaldi.txt"
 
 #   SR_RULE="alert http \$HOME_NET any -> \$EXTERNAL_NET any (msg:\"tracking-filter tracking link detected\"; flow:established,from_client; http.method; content:\"GET\"; http.uri; content:\"$URI\"; endswith; nocase; http.host; content:\"$HOST\"; classtype:attempted-recon; sid:$SID; rev:1;)"
 
-#   echo "$SN_RULE" >> "../dist/tracking-filter-snort2.rules"
-#   echo "$SN3_RULE" >> "../dist/tracking-filter-snort3.rules"
-#   echo "$SR_RULE" >> "../dist/tracking-filter-suricata.rules"
+#   echo "$SN_RULE" >> "../public/tracking-filter-snort2.rules"
+#   echo "$SN3_RULE" >> "../public/tracking-filter-snort3.rules"
+#   echo "$SR_RULE" >> "../public/tracking-filter-suricata.rules"
 
 #   SID=$(( $SID + 1 ))
 # done < "tracking-url.txt"
@@ -81,14 +85,14 @@ sed "1s/Blocklist/Blocklist (Vivaldi)/" > "../dist/tracking-filter-vivaldi.txt"
 # ## Re-enable command print
 # set -x
 
-# sed -i '1 i\'"$COMMENT_HASH"'' "../dist/tracking-filter-snort2.rules"
-# sed -i "1s/Blocklist/Snort2 Ruleset/" "../dist/tracking-filter-snort2.rules"
+# sed -i '1 i\'"$COMMENT_HASH"'' "../public/tracking-filter-snort2.rules"
+# sed -i "1s/Blocklist/Snort2 Ruleset/" "../public/tracking-filter-snort2.rules"
 
-# sed -i '1 i\'"$COMMENT_HASH"'' "../dist/tracking-filter-snort3.rules"
-# sed -i "1s/Blocklist/Snort3 Ruleset/" "../dist/tracking-filter-snort3.rules"
+# sed -i '1 i\'"$COMMENT_HASH"'' "../public/tracking-filter-snort3.rules"
+# sed -i "1s/Blocklist/Snort3 Ruleset/" "../public/tracking-filter-snort3.rules"
 
-# sed -i '1 i\'"$COMMENT_HASH"'' "../dist/tracking-filter-suricata.rules"
-# sed -i "1s/Blocklist/Suricata Ruleset/" "../dist/tracking-filter-suricata.rules"
+# sed -i '1 i\'"$COMMENT_HASH"'' "../public/tracking-filter-suricata.rules"
+# sed -i "1s/Blocklist/Suricata Ruleset/" "../public/tracking-filter-suricata.rules"
 
 
 ## Clean-up artifacts
