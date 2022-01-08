@@ -1,5 +1,5 @@
 # Title: Tracking JS Blocklist
-# Updated: Sat, 01 Jan 2022 00:02:53 +0000
+# Updated: Sat, 08 Jan 2022 00:02:31 +0000
 # Expires: 7 day (update frequency)
 # Homepage: https://gitlab.com/curben/tracking-filter
 # License: https://gitlab.com/curben/tracking-filter#license
@@ -23690,8 +23690,6 @@ githack.com/divsoso/sos/94e871164438967182390c647e30808c8db14abf/soscd.js
 githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js
 githack.com/skuy99/seo-smart-safelink/07180b87591c2f0ec2b9cfff31d1ff5bde567cc4/seo-smart-safelink.js
 githack.com/zloirock/core-js/v2.5.0/client/shim.min.js
-githubassets.com/assets/chunk-cookies-48f59dde.js
-githubassets.com/assets/chunk-vendor-c5626ba8.js
 gjirafa.com/js/ap-gjanout.js
 gjirafa.com/prebid/wrapper.js
 gladly.com/assets/chat-sdk/apiBootstrap~7b8915a3778088271387.js
