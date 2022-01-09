@@ -25,7 +25,13 @@ Import the following URL into uBO/AdGuard to subscribe:
 <details>
 <summary>Mirrors</summary>
 
+- https://curbengh.github.io/malware-filter/tracking-filter.txt
+- https://curbengh.github.io/tracking-filter/tracking-filter.txt
 - https://curben.gitlab.io/tracking-filter/tracking-filter.txt
+- https://malware-filter.pages.dev/tracking-filter.txt
+- https://tracking-filter.pages.dev/tracking-filter.txt
+- https://malware-filter.netlify.app/tracking-filter.txt
+- https://tracking-filter.netlify.app/tracking-filter.txt
 
 </details>
 
@@ -40,7 +46,13 @@ Import the following URL into Vivaldi's **Tracker Blocking Sources** to subscrib
 <details>
 <summary>Mirrors</summary>
 
+- https://curbengh.github.io/malware-filter/tracking-filter-vivaldi.txt
+- https://curbengh.github.io/tracking-filter/tracking-filter-vivaldi.txt
 - https://curben.gitlab.io/tracking-filter/tracking-filter-vivaldi.txt
+- https://malware-filter.pages.dev/tracking-filter-vivaldi.txt
+- https://tracking-filter.pages.dev/tracking-filter-vivaldi.txt
+- https://malware-filter.netlify.app/tracking-filter-vivaldi.txt
+- https://tracking-filter.netlify.app/tracking-filter-vivaldi.txt
 
 </details>
 
@@ -53,7 +65,13 @@ A list of URLs without any filter syntax.
 <details>
 <summary>Mirrors</summary>
 
+- https://curbengh.github.io/malware-filter/tracking-data.txt
+- https://curbengh.github.io/tracking-filter/tracking-data.txt
 - https://curben.gitlab.io/tracking-filter/tracking-data.txt
+- https://malware-filter.pages.dev/tracking-data.txt
+- https://tracking-filter.pages.dev/tracking-data.txt
+- https://malware-filter.netlify.app/tracking-data.txt
+- https://tracking-filter.netlify.app/tracking-data.txt
 
 </details>
 
