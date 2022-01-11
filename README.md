@@ -79,6 +79,10 @@ A list of URLs without any filter syntax.
 
 - [Blokada version](https://blokada.org/blocklists/ddgtrackerradar/standard/hosts.txt) can block more tracking domains but with more false positives. [More details](https://community.blokada.org/t/introducing-duckduckgo-tracker-radar-to-blokada/469)
 
+## FAQ and Guides
+
+See [wiki](https://gitlab.com/curben/malware-filter/-/wikis/home)
+
 ## License
 
 [src/](src/): [CC0 1.0](LICENSE.md)
