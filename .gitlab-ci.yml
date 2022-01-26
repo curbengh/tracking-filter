@@ -34,9 +34,6 @@ pages:
     paths:
       - public
 
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-
 cloudflare:
   stage: deploy
 
