@@ -30,8 +30,6 @@ Import the following URL into uBO/AdGuard to subscribe:
 - https://curben.gitlab.io/tracking-filter/tracking-filter.txt
 - https://malware-filter.pages.dev/tracking-filter.txt
 - https://tracking-filter.pages.dev/tracking-filter.txt
-- https://malware-filter.netlify.app/tracking-filter.txt
-- https://tracking-filter.netlify.app/tracking-filter.txt
 
 </details>
 
@@ -51,8 +49,6 @@ Import the following URL into Vivaldi's **Tracker Blocking Sources** to subscrib
 - https://curben.gitlab.io/tracking-filter/tracking-filter-vivaldi.txt
 - https://malware-filter.pages.dev/tracking-filter-vivaldi.txt
 - https://tracking-filter.pages.dev/tracking-filter-vivaldi.txt
-- https://malware-filter.netlify.app/tracking-filter-vivaldi.txt
-- https://tracking-filter.netlify.app/tracking-filter-vivaldi.txt
 
 </details>
 
@@ -70,8 +66,6 @@ A list of URLs without any filter syntax.
 - https://curben.gitlab.io/tracking-filter/tracking-data.txt
 - https://malware-filter.pages.dev/tracking-data.txt
 - https://tracking-filter.pages.dev/tracking-data.txt
-- https://malware-filter.netlify.app/tracking-data.txt
-- https://tracking-filter.netlify.app/tracking-data.txt
 
 </details>
 
