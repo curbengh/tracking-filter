@@ -1,5 +1,5 @@
 ! Title: Tracking JS Blocklist
-! Updated: Sat, 26 Mar 2022 00:02:53 +0000
+! Updated: Sat, 02 Apr 2022 00:02:43 +0000
 ! Expires: 7 day (update frequency)
 ! Homepage: https://gitlab.com/curben/tracking-filter
 ! License: https://gitlab.com/curben/tracking-filter#license
