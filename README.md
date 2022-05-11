@@ -1,6 +1,6 @@
 # Tracking JS Blocklist
 
-> Edit 2021/01/08: the default branch has changed to **main**.
+> Edit 2022/05/11: curben.gitlab.io is being migrated to malware-filter.gitlab.io
 
 A blocklist of javascript links (or webpages with javascript) that perform [browser fingerprinting](https://en.wikipedia.org/wiki/Web_tracking). The original data set is collected by DuckDuckGo's [Tracker Radar](https://github.com/duckduckgo/tracker-radar) project. Blocklist is updated on the first day of the month.
 
@@ -20,14 +20,14 @@ Check out my other filters:
 
 Import the following URL into uBO/AdGuard to subscribe:
 
-- https://curben.gitlab.io/malware-filter/tracking-filter.txt
+- https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt
 
 <details>
 <summary>Mirrors</summary>
 
 - https://curbengh.github.io/malware-filter/tracking-filter.txt
 - https://curbengh.github.io/tracking-filter/tracking-filter.txt
-- https://curben.gitlab.io/tracking-filter/tracking-filter.txt
+- https://malware-filter.gitlab.io/tracking-filter/tracking-filter.txt
 - https://malware-filter.pages.dev/tracking-filter.txt
 - https://tracking-filter.pages.dev/tracking-filter.txt
 
@@ -39,14 +39,14 @@ _Requires Vivaldi Desktop/Android 3.3+, blocking level must be at least "Block T
 
 Import the following URL into Vivaldi's **Tracker Blocking Sources** to subscribe:
 
-- https://curben.gitlab.io/malware-filter/tracking-filter-vivaldi.txt
+- https://malware-filter.gitlab.io/malware-filter/tracking-filter-vivaldi.txt
 
 <details>
 <summary>Mirrors</summary>
 
 - https://curbengh.github.io/malware-filter/tracking-filter-vivaldi.txt
 - https://curbengh.github.io/tracking-filter/tracking-filter-vivaldi.txt
-- https://curben.gitlab.io/tracking-filter/tracking-filter-vivaldi.txt
+- https://malware-filter.gitlab.io/tracking-filter/tracking-filter-vivaldi.txt
 - https://malware-filter.pages.dev/tracking-filter-vivaldi.txt
 - https://tracking-filter.pages.dev/tracking-filter-vivaldi.txt
 
@@ -56,14 +56,14 @@ Import the following URL into Vivaldi's **Tracker Blocking Sources** to subscrib
 
 A list of URLs without any filter syntax.
 
-- https://curben.gitlab.io/malware-filter/tracking-data.txt
+- https://malware-filter.gitlab.io/malware-filter/tracking-data.txt
 
 <details>
 <summary>Mirrors</summary>
 
 - https://curbengh.github.io/malware-filter/tracking-data.txt
 - https://curbengh.github.io/tracking-filter/tracking-data.txt
-- https://curben.gitlab.io/tracking-filter/tracking-data.txt
+- https://malware-filter.gitlab.io/tracking-filter/tracking-data.txt
 - https://malware-filter.pages.dev/tracking-data.txt
 - https://tracking-filter.pages.dev/tracking-data.txt
 
