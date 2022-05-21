@@ -12,9 +12,10 @@ The list contains **all** the links that Tracker Radar detected to have browser 
 - [Plain URL](#plain-url) - original links without filter syntax
 
 Check out my other filters:
-- [urlhaus-filter](https://gitlab.com/curben/urlhaus-filter)
-- [phishing-filter](https://gitlab.com/curben/phishing-filter)
-- [pup-filter](https://gitlab.com/curben/pup-filter)
+- [urlhaus-filter](https://gitlab.com/malware-filter/urlhaus-filter)
+- [phishing-filter](https://gitlab.com/malware-filter/phishing-filter)
+- [pup-filter](https://gitlab.com/malware-filter/pup-filter)
+- [vn-badsite-filter](https://gitlab.com/malware-filter/vn-badsite-filter)
 
 ## URL-based
 
@@ -75,7 +76,7 @@ A list of URLs without any filter syntax.
 
 ## FAQ and Guides
 
-See [wiki](https://gitlab.com/curben/malware-filter/-/wikis/home)
+See [wiki](https://gitlab.com/malware-filter/malware-filter/-/wikis/home)
 
 ## License
 
