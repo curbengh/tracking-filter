@@ -61,7 +61,7 @@ sed '1 i\'"$COMMENT_UBO"'' > "../public/tracking-filter.txt"
 # Vivaldi
 cat "tracking-url.txt" | \
 sed "s/^/||/g" | \
-sed "s/$/\$document/g" | \
+sed "s/$/\$script/g" | \
 sed '1 i\'"$COMMENT_UBO"'' | \
 sed "1s/Blocklist/Blocklist (Vivaldi)/" > "../public/tracking-filter-vivaldi.txt"
 
