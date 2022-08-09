@@ -72,6 +72,8 @@ A list of URLs without any filter syntax.
 
 ## See also
 
+- [DuckDuckGo Browser Extension](https://github.com/duckduckgo/duckduckgo-privacy-extension) supports more advanced features like script surrogate and CNAME uncloak.
+
 - [Blokada version](https://blokada.org/blocklists/ddgtrackerradar/standard/hosts.txt) can block more tracking domains but with more false positives. [More details](https://community.blokada.org/t/introducing-duckduckgo-tracker-radar-to-blokada/469)
 
 ## FAQ and Guides
