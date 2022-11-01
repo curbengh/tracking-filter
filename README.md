@@ -1,6 +1,14 @@
 # Tracking JS Blocklist
 
-> Edit 2022/05/11: curben.gitlab.io is being migrated to malware-filter.gitlab.io
+- Formats
+  * [URL-based](#url-based)
+  * [URL-based (Vivaldi)](#url-based-vivaldi)
+  * [Plain URL](#plain-url)
+- [Compressed version](#compressed-version)
+- [See also](#see-also)
+- [FAQ and Guides](#faq-and-guides)
+- [CI Variables](#ci-variables)
+- [License](#license)
 
 A blocklist of javascript links (or webpages with javascript) that perform [browser fingerprinting](https://en.wikipedia.org/wiki/Web_tracking). The original data set is collected by DuckDuckGo's [Tracker Radar](https://github.com/duckduckgo/tracker-radar) project. Blocklist is updated on the first day of the month.
 
@@ -70,6 +78,13 @@ A list of URLs without any filter syntax.
 
 </details>
 
+## Compressed version
+
+All filters are also available as gzip- and brotli-compressed.
+
+Gzip: https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt.gz
+Brotli: https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt.br
+
 ## See also
 
 - [DuckDuckGo Browser Extension](https://github.com/duckduckgo/duckduckgo-privacy-extension) supports more advanced features like script surrogate and CNAME uncloak.
@@ -79,6 +94,13 @@ A list of URLs without any filter syntax.
 ## FAQ and Guides
 
 See [wiki](https://gitlab.com/malware-filter/malware-filter/-/wikis/home)
+
+## CI Variables
+
+Optional variables:
+
+- `CLOUDFLARE_BUILD_HOOK`: Deploy to Cloudflare Pages.
+- `NETLIFY_SITE_ID`: Deploy to Netlify.
 
 ## License
 
