@@ -36,7 +36,7 @@ grep -F -vf "../src/exclude.txt" | \
 sort -u > "tracking-url.txt"
 
 
-CURRENT_TIME="$(date -R -u)"
+CURRENT_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 FIRST_LINE="! Title: Tracking JS Blocklist"
 SECOND_LINE="! Updated: $CURRENT_TIME"
 THIRD_LINE="! Expires: 7 day (update frequency)"
