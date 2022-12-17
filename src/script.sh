@@ -49,20 +49,20 @@ mkdir -p "../public/"
 
 # Original data
 cat "tracking-url.txt" | \
-sed '1 i\'"$COMMENT_UBO"'' | \
+sed "1i $COMMENT_UBO" | \
 sed "s/^!/#/g" > "../public/tracking-data.txt"
 
 # uBO & Adguard
 cat "tracking-url.txt" | \
 sed "s/^/||/g" | \
 sed "s/$/\$all/g" | \
-sed '1 i\'"$COMMENT_UBO"'' > "../public/tracking-filter.txt"
+sed "1i $COMMENT_UBO" > "../public/tracking-filter.txt"
 
 # Vivaldi
 cat "tracking-url.txt" | \
 sed "s/^/||/g" | \
 sed "s/$/\$script/g" | \
-sed '1 i\'"$COMMENT_UBO"'' | \
+sed "1i $COMMENT_UBO" | \
 sed "1s/Blocklist/Blocklist (Vivaldi)/" > "../public/tracking-filter-vivaldi.txt"
 
 ## This took more than 10 minutes on my not-so-sham laptop which is equivalent of *forever* on puny CI/CD VM.
