@@ -19,21 +19,21 @@ jobs:
         run: sh ./src/script.sh
       - name: Compress
         run: |
-          find public -type f -regex '.*\.\(txt\|conf\|tpl\|rules\)$' -exec gzip -f -k -9 {} \;
-          find public -type f -regex '.*\.\(txt\|conf\|tpl\|rules\)$' -exec brotli -f -k -9 {} \;
+          find public -type f -regex '.*\.\(txt\|conf\|tpl\|rules\|csv\)$' -exec gzip -f -k -9 {} \;
+          find public -type f -regex '.*\.\(txt\|conf\|tpl\|rules\|csv\)$' -exec brotli -f -k -9 {} \;
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           force_orphan: true
-      - name: 'Upload Public Folder'
+      - name: "Upload Public Folder"
         uses: actions/upload-artifact@v2
         with:
           name: public
           path: ./public
           retention-days: 30
-      - name: 'Upload Tmp Folder'
+      - name: "Upload Tmp Folder"
         uses: actions/upload-artifact@v2
         with:
           name: tmp
