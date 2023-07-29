@@ -1,9 +1,9 @@
 # Tracking JS Blocklist
 
 - Formats
-  * [URL-based](#url-based)
-  * [URL-based (Vivaldi)](#url-based-vivaldi)
-  * [Plain URL](#plain-url)
+  - [URL-based](#url-based)
+  - [URL-based (Vivaldi)](#url-based-vivaldi)
+  - [Plain URL](#plain-url)
 - [Compressed version](#compressed-version)
 - [See also](#see-also)
 - [FAQ and Guides](#faq-and-guides)
@@ -14,12 +14,16 @@ A blocklist of javascript links (or webpages with javascript) that perform [brow
 
 The list contains **all** the links that Tracker Radar detected to have browser fingerprinting, there is no further processing to remove false positive.
 
-- uBlock Origin (uBO) -> [URL-based](#url-based) section
-- AdGuard browser extension -> [URL-based](#url-based) section
-- Vivaldi -> [URL-based (Vivaldi)](#url-based-vivaldi) section
-- [Plain URL](#plain-url) - original links without filter syntax
+| Client                                                   | mirror 1                                                                            | mirror 2                                                                      | mirror 3                                                                       | mirror 4                                                                             | mirror 5                                                             | mirror 6                                                              |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [uBlock Origin](#url-based), AdGuard (browser extension) | [link](https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt)         | [link](https://curbengh.github.io/malware-filter/tracking-filter.txt)         | [link](https://curbengh.github.io/tracking-filter/tracking-filter.txt)         | [link](https://malware-filter.gitlab.io/tracking-filter/tracking-filter.txt)         | [link](https://malware-filter.pages.dev/tracking-filter.txt)         | [link](https://tracking-filter.pages.dev/tracking-filter.txt)         |
+| [Vivaldi](#url-based-vivaldi)                            | [link](https://malware-filter.gitlab.io/malware-filter/tracking-filter-vivaldi.txt) | [link](https://curbengh.github.io/malware-filter/tracking-filter-vivaldi.txt) | [link](https://curbengh.github.io/tracking-filter/tracking-filter-vivaldi.txt) | [link](https://malware-filter.gitlab.io/tracking-filter/tracking-filter-vivaldi.txt) | [link](https://malware-filter.pages.dev/tracking-filter-vivaldi.txt) | [link](https://tracking-filter.pages.dev/tracking-filter-vivaldi.txt) |
+| [Plain URL](#plain-url)                                  | [link](https://malware-filter.gitlab.io/malware-filter/tracking-data.txt)           | [link](https://curbengh.github.io/malware-filter/tracking-data.txt)           | [link](https://curbengh.github.io/tracking-filter/tracking-data.txt)           | [link](https://malware-filter.gitlab.io/tracking-filter/tracking-data.txt)           | [link](https://malware-filter.pages.dev/tracking-data.txt)           | [link](https://tracking-filter.pages.dev/tracking-data.txt)           |
+
+For other programs, see [Compatibility](https://gitlab.com/malware-filter/malware-filter/wikis/compatibility) page in the wiki.
 
 Check out my other filters:
+
 - [urlhaus-filter](https://gitlab.com/malware-filter/urlhaus-filter)
 - [phishing-filter](https://gitlab.com/malware-filter/phishing-filter)
 - [pup-filter](https://gitlab.com/malware-filter/pup-filter)
@@ -27,56 +31,17 @@ Check out my other filters:
 
 ## URL-based
 
-Import the following URL into uBO/AdGuard to subscribe:
-
-- https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt
-
-<details>
-<summary>Mirrors</summary>
-
-- https://curbengh.github.io/malware-filter/tracking-filter.txt
-- https://curbengh.github.io/tracking-filter/tracking-filter.txt
-- https://malware-filter.gitlab.io/tracking-filter/tracking-filter.txt
-- https://malware-filter.pages.dev/tracking-filter.txt
-- https://tracking-filter.pages.dev/tracking-filter.txt
-
-</details>
+Import the URL into uBO/AdGuard to subscribe.
 
 ## URL-based (Vivaldi)
 
 _Requires Vivaldi Desktop/Android 3.3+, blocking level must be at least "Block Trackers"_
 
-Import the following URL into Vivaldi's **Tracker Blocking Sources** to subscribe:
-
-- https://malware-filter.gitlab.io/malware-filter/tracking-filter-vivaldi.txt
-
-<details>
-<summary>Mirrors</summary>
-
-- https://curbengh.github.io/malware-filter/tracking-filter-vivaldi.txt
-- https://curbengh.github.io/tracking-filter/tracking-filter-vivaldi.txt
-- https://malware-filter.gitlab.io/tracking-filter/tracking-filter-vivaldi.txt
-- https://malware-filter.pages.dev/tracking-filter-vivaldi.txt
-- https://tracking-filter.pages.dev/tracking-filter-vivaldi.txt
-
-</details>
+Import the URL into Vivaldi's **Tracker Blocking Sources** to subscribe.
 
 ## Plain URL
 
 A list of URLs without any filter syntax.
-
-- https://malware-filter.gitlab.io/malware-filter/tracking-data.txt
-
-<details>
-<summary>Mirrors</summary>
-
-- https://curbengh.github.io/malware-filter/tracking-data.txt
-- https://curbengh.github.io/tracking-filter/tracking-data.txt
-- https://malware-filter.gitlab.io/tracking-filter/tracking-data.txt
-- https://malware-filter.pages.dev/tracking-data.txt
-- https://tracking-filter.pages.dev/tracking-data.txt
-
-</details>
 
 ## Compressed version
 
