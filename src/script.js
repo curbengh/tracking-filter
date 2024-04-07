@@ -9,7 +9,7 @@ const { parse } = JSON
 
 const f = async () => {
   // __dirname is src/
-  const outputFile = join(__dirname, '..', 'tmp','tracking-data-raw.txt')
+  const outputFile = join(__dirname, '..', 'tmp', 'tracking-data-raw.txt')
   await rm(outputFile, { force: true })
   const domains = join(__dirname, '..', 'tmp', 'tracker-radar', 'domains')
   const countries = await readdir(domains)
